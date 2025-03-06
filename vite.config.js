@@ -9,8 +9,8 @@ export default defineConfig({
     federation({
       name: "hostApp",
       remotes: {
-        chatApp: "http://localhost:5001/assets/remoteEntry.js",//Ensure correct remote entry URL
-        emailApp: "http://localhost:5002/assets/remoteEntry.js",
+        chatApp: "https://micro-frontend-poc-part-1.netlify.app/assets/remoteEntry.js",
+        emailApp: "https://micro-frontend-poc-part-2.netlify.app/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),
